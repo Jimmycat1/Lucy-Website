@@ -1,0 +1,61 @@
+
+This file includes all the active routes that are available for the API.
+
+/api
+  API_LIMITER
+  CSRF_PROTECTION
+  /csrf-token
+    RETURN { csrfToken }
+    NOTE client then needs to set X-CSRF-Token header to this in every request.
+  /email
+    /
+      EMAIL_LIMITER
+      NOTE Sends email from Email to Email.
+  /orderR
+    /:paintingId
+      EMAIL_LIMITER
+      NOTE Sends email.
+      NOTE No limiter yet.
+
+  /admin
+    /auth
+      /
+        ADMIN_LOGIN_IP_LIMITER
+        ADMIN_LOGIN_USER_LIMITER
+        RETURN JWT Cookie
+        NOTE not using new error format
+
+  /painting
+    /
+      Get
+       RETURN all paintings
+      Post
+        AUTH_ADMIN
+        NOTE Adds new painting to DB collection.
+    /ids
+      RETURN all painting ids, sorted by date
+    /:id
+      Get
+        RETURN painting
+      Delete
+        AUTH_ADMIN
+        NOTE Deletes painting from DB collection.
+      Patch
+        AUTH_ADMIN
+      /photos
+        Patch
+          AUTH_ADMIN
+          NOTE Updates the photo filenames stored for a painting.
+
+  /upload
+    UPLOAD_LIMITER
+    AUTH_ADMIN
+    Saves the photo
+    RETURNS filename
+
+
+/images
+  IMAGE_LIMITER
+  /:filename
+    RETURN image
+    ERROR 500 with error

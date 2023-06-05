@@ -1,0 +1,13 @@
+.captcha{
+    padding: 5% 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    border-radius: 5px;
+    background: $gradient-greenish-transparent;
+
+    text-align: center;
+    & > input{
+        text-align: center;
+    }
+}

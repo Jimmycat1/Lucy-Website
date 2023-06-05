@@ -1,0 +1,114 @@
+
+
+.painting-photo-popup{
+    position: relative;
+    display: block;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh - $top-navbar-height;
+
+    background: $color-grey-2;
+    padding: .5rem 10% 1rem;
+
+    & .backButton{
+        font-size: 0.75rem;
+        &:hover, &:focus{
+            border-bottom: solid 2px;
+        }
+    }
+
+    &>.oneColumn{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1.5rem;
+    }
+
+    &>div{
+        position: static;
+        margin-top: 1rem;
+
+        // &>img{
+        //     position: relative;
+        //     max-width: 100%;
+        //     max-height: 40vh;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     border: ridge .2rem white;
+        //     box-shadow: 0rem .5rem 10px rgba(0, 0, 0, 0.5);
+
+        //     transition: all .5s ease-out;
+
+        //     &:hover{
+        //         transform:translateX(-50%) scale(1.2);
+        //     }
+        // }
+
+        & .meta-data{
+            background: $color-grey-3;
+            padding: 1.5rem 2rem;
+            font-size: 0.8rem;
+            color: $color-grey-1;
+
+            &>*{
+                margin: 1rem 0px;
+            }
+
+            &> .painting-title{
+                font-size: 1.2em;
+                color: $color-white-s;
+                border-bottom: 3px solid white;
+                padding-bottom: .2em;
+                margin-bottom: .5em;
+            }
+
+            &> .painting-description{
+                // Add line below for line break preservation
+                white-space: pre-wrap;
+                color: $color-white-s;
+                font-size: 1em;
+                line-height: 1.4em;
+            }
+
+            &> .painting-features{
+                display: block;
+                padding: 1rem .7rem;
+
+                &>ul{
+                    text-decoration: none;
+                    list-style: none;
+
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-gap: 1rem;
+                    & > li{
+                        text-align: center;
+                        &> *{
+                            margin: .5rem;
+                        }
+                        & > i{
+                            font-size: 8vmin;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+
+@media screen and (min-aspect-ratio: 4/5){
+    .painting-photo-popup{
+        &>div{
+            padding: 0px 20%;
+
+            & .meta-data{
+                &> .painting-features{
+                    &>ul{
+                        grid-template-columns: 1fr 1fr 1fr;
+                    }
+                }
+            }
+        }
+    }
+}

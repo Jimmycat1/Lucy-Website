@@ -1,0 +1,35 @@
+
+#ADMIN-PAINTING-EDITOR{
+    & .APE{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 1rem 2rem;
+
+        & .meta{
+            padding: 1rem 0px;
+        }
+
+        & .controls{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: .2rem;
+            margin-top: .2rem;
+        }
+    }
+
+    &.preview-painting{
+        margin-top: 2rem;
+    }
+}
+
+
+@media screen and (min-aspect-ratio: 1/1){
+    #ADMIN-PAINTING-EDITOR{
+        & .APE{
+            grid-template-columns: 1fr 1fr;
+
+        }
+
+    }
+}

@@ -1,0 +1,54 @@
+
+// .button-regular,
+// .button-regular:link,
+// .button-regular:visited{
+//     position: relative;
+//     display: block;
+
+    
+//     color: $color-white-s;
+//     background: $color-orange-darker;
+
+//     border-radius: 50px;
+//     padding: .75rem 0;
+//     text-align: center;
+
+//     box-shadow: 0 .5rem .25rem rgba(black,0.2);
+//     transition: all .5s;
+
+//     &:hover{
+//         transform: translateY(-5px);
+//     }
+//     &:focus{
+//         transform: translateY(0px);
+//     }
+// }
+
+@mixin button($bg, $bg-hover, $fontColor:$color-white-s){
+    position: relative;
+    display: block;
+
+    color: $fontColor;
+    background: $bg;
+
+    border-radius: 5px;
+    padding: .75rem .2rem;
+    text-align: center;
+
+    transition: all .3s;
+    &:hover, &:focus{
+        background: $bg-hover;
+    }
+
+    @media screen and (min-aspect-ratio: 4/5){
+            width: 50%;
+            margin: auto;
+    }
+}
+
+.button-regular,
+.button-regular:link,
+.button-regular:visited{
+    @include button(#6aca87, #50b471, $color-white-s)
+}
+

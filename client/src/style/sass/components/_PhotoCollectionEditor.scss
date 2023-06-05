@@ -1,0 +1,97 @@
+
+$theme-gradient: linear-gradient(120deg,$color-yellow-lighter, orange);
+$theme-color: gold;
+$theme-color-2: orange;
+$theme-color-3: rgb(127, 98, 252);
+
+
+.PhotoCollectionsEditor {
+    position: relative;
+    width: 100%;
+
+    & .photosList{
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        width: 100%;
+        height: 15rem;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 1.5rem 1rem;
+
+        background-color: $color-white-s;
+        border: 2px solid $theme-color;
+        border-radius: 4px;
+
+        & > *{
+            margin: 0px 1rem;
+        }
+
+        // To sort out error with padding not showing up
+        &::after{
+            content: '';
+            min-width: 1rem;
+        }
+
+        &--photo{
+            position: relative;
+            height: 100%;
+            & > img{
+                height: 100%;
+                min-width: 5rem;
+                box-shadow: 0px 2px 4px rgba($color-black, 0.6);
+            }
+
+            &--preview{
+                & > img{
+                    border: 3px dotted $theme-color-2;
+                }
+            }
+
+            & > button {
+                position: absolute;
+                right: 0;
+            }
+        }
+
+        &--add, &--confirm{
+            min-width: 200px;
+            height: 100%;
+            color: $theme-color;
+            background: $color-grey-5;
+            border: dotted 2px $color-grey-1;
+            border-radius: 5px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            transition: all .5s;
+
+            & > * {
+                padding: .25rem 0px;
+            }
+
+            &:hover, &:focus{
+                color: $color-white-s;
+                background: $theme-color-2;
+                border: none;
+            }
+        }
+
+        &::-webkit-scrollbar{
+            height: 20px;
+            width: 50%;
+            background-color: $color-white-s;
+            &-thumb{
+                border-radius: 10px;
+                background: $theme-gradient;
+                border: solid 5px $color-white-s;
+            }
+        }
+    }
+}

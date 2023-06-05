@@ -1,0 +1,35 @@
+
+.heading-common{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.heading-big{
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    color: $color-white-s;
+}
+
+.heading-sub{
+    font-size: 0.7rem;
+    font-weight: 100;
+    color: $color-grey-1;
+
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.heading-medium{
+    text-align: center;
+    margin-top: 1.5rem;
+    color: $color-white-s;
+    margin-bottom: 1rem;
+}
+
+.description{
+    text-align: justify;
+    font-size: 0.8rem;
+    color: $color-grey-1;
+    margin-top: -0.5rem;
+}

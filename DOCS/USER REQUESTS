@@ -1,0 +1,52 @@
+
+
+  Basket feature
+  Basket as a slide down page.
+There is a button below to slide it back up.
+  Icon near menu for basket.
+Shown when user requests an item.
+  Lists all paintings / cards added.
+Picture, title, price, amount.
+Each has a up key / down key to add more or remove.
+Each is a link to actual item page.
+Button "Send request to owner" at the bottom. Leads to email page.
+Email page is just one field - email.
+Explains: "I'll need to check if these items are still a available. I'll send you an email with instructions on how to pay, and delivery options."
+Explains: "Please can I have your email so I can contact you."
+Email field.
+Button "Send".
+Processing loader.
+Success or error.
+
+Max stock property. <=
+// Automatically set to 1.
+Message user when no stock left.
+Prevent adding any more.
+
+Remember - scrolling for basket.
+
+CSRF token request function - catch errors too, if you want.
+
+Timeout feature on requests - prevent infinite loops
+
+Disable account if too many login attempts.
+
+Make sure drafts stay secret (server side).
+
+Check how exactly rate limiter works for combined IP and admin name.
+
+Email limiter - decide how many.
+
+Log log-in times. Also log DB errors.
+
+Sort out error logging to database.
+
+Sort out rate limiters, especially email.
+
+CHECK FOR email html injection.
+It happens
+Fix email html injection problem.
+
+Question mark to ask a question anywhere on the website.
++(opt) as a popup. (? confirm)
++(opt) Directed to this if error (? confirm)

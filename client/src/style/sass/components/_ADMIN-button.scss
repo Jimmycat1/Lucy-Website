@@ -1,0 +1,31 @@
+.ADMIN-button {
+  cursor: pointer;
+
+  outline: none;
+  background: $color-orange-darker;
+  padding: 0.5rem 0.5rem;
+  color: $color-white-s;
+  font-size: 0.8em;
+  font-weight: bold;
+  border: .2rem solid transparent;
+  border-radius: 3px;
+
+  transition: all .2s;
+
+  &:focus{
+    border-color: $color-white-s;
+  }
+
+  &-delete{
+    background-color: $color-danger-dark;
+  }
+  &-cancel{
+    background-color: $color-white-s;
+    border-color: $color-orange-darker;
+    color: $color-orange-darker;
+  }
+
+  &:disabled{
+    filter: brightness(0.5);
+  }
+}

@@ -1,0 +1,64 @@
+.center-relative-Y {
+  position: relative;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.center-relative-X {
+  position: relative;
+  width: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.align-center {
+  text-align: center;
+}
+
+.margin-bottom-M {
+  margin-bottom: 1.5rem;
+}
+.margin-top-B {
+  margin-top: 2.5rem;
+}
+
+.container {
+  width: 100%;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.section {
+  padding-bottom: 4rem;
+  padding-top: 3rem;
+  &:nth-child(2n) {
+    background: $color-grey-3;
+  }
+}
+
+.full-screen-height {
+  min-height: 80vh;
+}
+
+.twoColumns{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    padding-right: 25%;
+    padding-left: 25%;
+  }
+}
+
+.fitIntoScreen{
+  max-height: 80vh;
+}

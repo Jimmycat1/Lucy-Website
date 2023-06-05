@@ -1,0 +1,10 @@
+{
+    "mongoURI_S": "mongodb+srv://maxicl:maxs123@maxicl-cluster-1-mjg6r.mongodb.net/test?retryWrites=true&w=majority&authSource=admin",
+    "mongoURI_A": "mongodb+srv://A_Server:FyfQC8Zl9CvRgLPw@maxicl-cluster-1.mjg6r.mongodb.net/?retryWrites=true&w=majority",
+    "DOMAIN_NAME": "myartventures.com",
+    "jwtSecret": "sl_myLittleSecret",
+    "ownerPass": "uQgl3UYlA5rjoDEOm9I0",
+    "ownerEmail":"ilpgw14@gmail.com",
+    "ownerEmailPass":"voolykjnuifuahrd",
+    "openEmail": "1"
+}

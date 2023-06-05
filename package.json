@@ -1,0 +1,39 @@
+{
+  "name": "lucyartv2",
+  "version": "1.0.0",
+  "description": "Lucy Art",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Max Silin",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "@icon/linea-basic": "^1.0.0",
+    "axios": "^0.23.0",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^4.1.2",
+    "config": "^3.3.6",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "csurf": "^1.11.0",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.5.0",
+    "express-validator": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.11",
+    "multer": "^1.4.3",
+    "nodemailer": "^6.7.0",
+    "prop-types": "^15.7.2",
+    "react-redux": "^7.2.5",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0"
+  }
+}

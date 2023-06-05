@@ -1,0 +1,39 @@
+.popup-message{
+    display: block;
+    background: $color-grey-2;
+    box-shadow: 0px 0px 5px rgba(0,0,0, 1);
+    color: $color-green-lighter;
+    border: 3px solid $color-green-darker;
+    position: fixed;
+    z-index: 1000;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    max-width: 80%;
+    min-width: 20%;
+    margin: auto auto;
+    padding: 1rem 1.5rem;
+
+    font-size: 0.8rem;
+
+    & > * {
+        margin: .5rem;
+    }
+}
+
+.popup-button{
+    cursor: pointer;
+
+    outline: none;
+    background: $color-green-darker;
+    padding: 0.5rem 0.5rem;
+    color: $color-green-lighter;
+    font-size: 0.8em;
+    font-weight: bold;
+    border: .2rem solid transparent;
+    border-radius: 3px;
+
+}
+

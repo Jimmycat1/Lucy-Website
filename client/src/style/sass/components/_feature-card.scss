@@ -1,0 +1,79 @@
+
+.feature-card{
+    position: relative;
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 1rem 10% 3.5rem;
+
+    border: solid 0.05rem;
+    color: $color-grey-1;
+    font-size: 0.8rem;
+    text-align: center;
+
+    box-shadow: 0 15px 10px $color-grey-3;
+
+    & h3{
+        margin: 0.5rem 0;
+    }
+
+    & .photo-selection{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        overflow: hidden;
+
+
+        & > img{
+            height: 100%;
+            width: 100%;
+
+        }
+    }
+
+    & ul{
+        list-style: none;
+
+        & li{
+            padding: 1rem 0;
+            &:not(:last-child){
+                border-bottom: solid 1px $color-grey-1;
+            }
+        }
+    }
+
+    & a:link,
+    a:visited{
+        font-size: inherit;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+
+    &--1{
+        border-color:$color-yellow;
+        & h3{
+            color: $color-yellow;
+        }
+        & .button-white{
+            background-color: $color-yellow-darker;
+        }
+    }
+    &--2{
+        border-color:$color-orange;
+        & h3{
+            color: $color-orange;
+        }
+        & .button-white{
+            background-color: $color-orange-darker;
+            color: $color-white-s;
+        }
+    }
+}
+
+.feature-card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px 2rem;
+}
+

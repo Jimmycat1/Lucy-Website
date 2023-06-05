@@ -1,0 +1,40 @@
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+@import "vendors/FA/fontawesome.scss";
+@import "vendors/FA/solid.scss";
+@import "vendors/FA/brands.scss";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+@import "base/animations";
+
+@import "components/customCheckbox";
+@import "components/painting-photo";
+@import "components/button-regular";
+@import "components/sidebutton";
+@import "components/full-screen-menu";
+@import "components/topnav";
+@import "components/feature-card";
+@import "components/form";
+@import "components/formA";
+@import "components/popup-message";
+@import "components/image-slideshow";
+@import "components/ADMIN-button";
+@import "components/ADMIN-add-painting";
+@import "components/PhotoCollectionEditor";
+@import "components/load-sign";
+@import "components/captcha";
+@import "components/closeUpImage";
+@import "components/infoFooter";
+@import "components/basket_dropdown";
+
+@import "pages/error";
+@import "pages/landing";
+@import "pages/gallery";
+@import "pages/painting-photo-popup";
+@import "pages/ADMIN-Dashboard";
+@import "pages/ADMIN-Painting-Editor";
+@import "pages/ADMIN-Login-Window";

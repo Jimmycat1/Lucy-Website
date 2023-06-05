@@ -1,0 +1,42 @@
+
+.topnav{
+    width: 100vw;
+    height: $top-navbar-height;
+    position: fixed;
+    z-index: 1001;
+    // border-bottom: solid 3px $color-grey-2;
+    box-shadow: 0 3px 3px $color-black;
+    display: block;
+    background-color: $color-grey-3;
+
+    & > div{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding: 0 10%;
+    }
+
+    &-item-left {
+        color: $color-grey-1;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        padding: 0rem .5rem;
+    }
+    &-item-right {
+        color: $color-grey-1;
+        position: relative;
+        text-align: center;
+        padding: 0rem .5rem;
+        float: right;
+    }
+    
+}
+
+.topnav-placeholder{
+    //Physical relative component that pushes everything down below topnav.
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: $top-navbar-height;
+}

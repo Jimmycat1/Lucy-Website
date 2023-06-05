@@ -1,0 +1,67 @@
+
+.menu-button{
+    display: inline-block;
+    padding: .2rem .1rem;
+    font-size: 1rem;
+    color: white;
+
+    & *{
+        color: white;
+    }
+
+    &:focus-visible{
+        background-color: $color-grey-2;
+        outline: solid 1px white;
+    }
+}
+
+#full-screen-menu{
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+
+    color:white;
+    background-color: $color-grey-main;
+
+    transition: all .5s;
+
+    & > ul {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+
+        width: 100vw;
+        list-style-type: none;
+        padding: 0;
+
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        & > li {
+            font-size: 1.75em;
+            font-weight: 600;
+            letter-spacing: 0.25rem;
+            color: $color-white-s;
+
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+            padding: 1rem 0;
+
+            &:not(:last-child){
+                border-bottom: solid 2px $color-grey-2;
+            }
+            
+            color: $color-grey-1;
+            &:hover, &:focus{
+                color: $color-white-s;
+            }
+        }
+    }    
+}

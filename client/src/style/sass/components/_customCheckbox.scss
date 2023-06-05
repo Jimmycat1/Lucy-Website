@@ -1,0 +1,44 @@
+
+.custom-checkbox{
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    & &--check{
+        width: 1.5rem;
+        height: 1.5rem;
+        position: relative;
+    }
+    & &--check>&--button{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    }
+    & &--check>&--back{
+        position: relative;
+        background: white;
+        border: solid .1rem $color-green;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+    & &--check>&--tick{
+        @include centerXY;
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        
+        background: $color-green-lighter;
+        z-index: 2;
+        transition: all .8s;
+
+        &[ticked="true"]{
+            width: 60%;
+            height: 60%;
+        }
+    }
+
+    &--text{
+        flex: 1;
+    }
+}

@@ -1,0 +1,21 @@
+
+.loadSign{
+    position: fixed;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: $color-grey-3;
+    border: none;
+    padding: 20px;
+    border-radius: 50%;
+
+    & .circle-loader{
+        border: 16px solid $color-white-s; /* Light grey */
+        border-top: 16px solid $color-orange-darker; /* Blue */
+        border-radius: 50%;
+        min-width: 120px;
+        min-height: 120px;
+        animation: spin 3s linear infinite;
+    }
+}

@@ -1,0 +1,34 @@
+.closeUpImage{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    
+    &>img{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    /* Close up sits inside this */
+    &--outputWindow{
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        visibility: hidden;
+    
+        &>img{
+            position: relative;
+        }
+    }
+
+    /* invisible window above it all that tracks cursor position */
+    &--inputWindow{
+        position: absolute;
+        top:0;
+        width: 100%;
+        height: 100%;
+    }
+}

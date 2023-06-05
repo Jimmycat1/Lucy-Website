@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 5vmin;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: $color-grey-main;
+}
+
+.main {
+  color: white;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: $color-white-s;
+  font-size: 1em;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+form {
+  & input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 0.3rem 0.5rem;
+  }
+
+  & label:not(:last-child) > *:last-child {
+    // Last child of label because label itself does not apply padding
+    margin-bottom: 1rem;
+  }
+
+  & select {
+    background: white;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  html {
+    font-size: 4vmin;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 3.5vmin;
+  }
+}

@@ -1,0 +1,7 @@
+*.log
+.env
+client/images/*
+node_modules
+client/node_modules
+client/build
+userImages

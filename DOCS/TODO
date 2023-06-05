@@ -1,0 +1,104 @@
+
+        _____________________________________________________________________________________________
+        |
+        |       CURRENT TASK
+        |
+        |       Add the action to change a painting's meta data.                20 points
+        |        - Add it.                                                      10
+        |        - Use it.                                                      10
+        |
+        |
+        |
+        |____________________________________________________________________________________________
+
+
+
+
+
+https://medium.com/@ryanchenkie_40935/react-authentication-how-to-store-jwt-in-a-cookie-346519310e81
+Took course: reactsecurity.io with Ryan Chenkie - thank him.
+
+
+Refresh tokens - check out.
+Generate own notice: https://termly.io/en/products/tl/cookie-consent-manager/
+
+Rate limiting node js
+https://blog.logrocket.com/rate-limiting-node-js/#:~:text=Rate%20limiting%20is%20a%20very,are%20processed%20by%20our%20server.
+
+Password Rate Limiting:
+https://security.stackexchange.com/questions/116113/rate-limit-login-attempts-count-by-ip-or-username
+
+Security:
+https://security.stackexchange.com/questions/203981/best-ways-to-keep-a-website-safe-without-web-security-and-cybersecurity-knowledg
+
+Using View Engine, Rate Limiting, Queues...
+https://medium.com/dataseries/how-to-rate-limit-your-api-f1c2cf420bdf 
+
+Handling express rate limiting faster:
+https://www.express-gateway.io/docs/policies/rate-limiter/
+
+Traversy Digital Ocean Deploy Help
+https://gist.github.com/bradtraversy/cd90d1ed3c462fe3bddd11bf8953a896 
+
+Need to add more images.
+
+CLIENT
+- Price as text (option for framed)
+- Dates as month and year                       DONE
+- Paintings update with rest of meta data.
+- Show full image of painting                   THREE OR ONE COLUMN GOING DOWN
+
+IDEAS:
+- Happy Lucy Face from menu
+
+
+>>>>>>>>>>>>>>>>>>>  DESIGN  <<<<<<<<<<<<<<<<<<<<<<
+
+  o  Make Purchase message stand out.
+  o  Add colours to stats.
+  o  Add go to top link.
+  o  Add inside loader placeholder 
+        to all loading components.
+
+
+==================   WORKING   ====================
+
+  -  Collector error and collector success.
+        Then display each based on 2 params.
+        Or disp error by default.
+
+  -  Add hidden field in form to say which page wrote email on.
+
+  -  Functionality to remove unused images.
+
+  - Landing paintings manage dynamically.
+
+  - Lazy image loading to maximise performance.
+
+  - Painting slideshow instead of scroll:
+    https://hiddedevries.nl/en/blog/2018-12-10-scroll-an-element-into-the-center-of-the-viewport 
+
+
+??????????????????  HOW TO  ??????????????????????
+
+  >  Error handling on server.
+
+  >  Check where to store sensitive info.
+
+  >  For Aamir loads?
+
+
+
+!!!!!!!!!!!!!!!!!!! IMPORTANT !!!!!!!!!!!!!!!!!!!!
+
+  @  Generate own cookie notice: https://termly.io/en/products/tl/cookie-consent-manager/
+
+  @  Fix Error 31 Add Painting
+
+  @ Swap out google address for server domain address
+
+
+
+Reload screen once painting editted.
+Consider replacing captcha for rate limiter.
+

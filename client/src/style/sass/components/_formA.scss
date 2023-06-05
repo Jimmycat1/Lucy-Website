@@ -1,0 +1,14 @@
+.formA{
+    & input:not([type='submit']):not([type='button']), & textarea, & select {
+        background-color: $color-grey-3;
+        color: $color-white-s;
+        border: 1px solid $color-grey-1;
+    }
+
+    & label{
+        &>p{
+            font-size: 0.8em;
+            margin-bottom: 0.1rem;
+        }
+    }
+}

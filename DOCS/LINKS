@@ -1,0 +1,35 @@
+https://pm2.io/docs/runtime/best-practices/environment-variables/
+https://stackoverflow.com/questions/16434267/how-to-stash-changes-in-current-folder
+https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/#quickly-save-local-changes
+
+PROMISES
+Iterating through promises in series
+https://stackoverflow.com/questions/41983202/how-to-iterate-through-an-array-of-promises-in-node-js
+In parallel with Promise.all() :
+https://appdividend.com/2019/01/03/javascript-promise-all-example-promise-all-tutorial/
+And making promises linear (escaping promise hell):
+https://medium.com/@pyrolistical/how-to-get-out-of-promise-hell-8c20e0ab0513
+
+USEFUL async await examples
+https://blog.risingstack.com/mastering-async-await-in-nodejs/
+
+TRANSACTIONS in mongoDB
+https://docs.mongodb.com/manual/core/transactions/
+
+New server user
+https://www.digitalocean.com/community/tutorials/how-to-use-pm2-to-setup-a-node-js-production-environment-on-an-ubuntu-vps
+
+Include key in ecosystem.config.js
+https://pm2.io/blog/2018/05/31/PM2-Setup-and-Deployment-with-Ecosystem-Configuration
+
+Tutorial
+https://codeburst.io/automate-your-deployment-process-with-pm2-b0fd7c256223
+
+Tutorial 2 - Also env variable mongo uri
+https://medium.com/@riyadhalnur/managing-and-deploying-nodejs-apps-with-pm2-173fbc7d3f95
+
+Git bash to run pm2
+https://github.com/Unitech/pm2/issues/3579
+
+WebGL SEO Question
+https://webmasters.stackexchange.com/questions/117279/is-it-possible-to-seo-a-full-webgl-three-js-website-so-it-wont-be-at-a-disadv

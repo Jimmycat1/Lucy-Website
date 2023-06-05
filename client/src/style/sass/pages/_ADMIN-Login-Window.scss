@@ -1,0 +1,22 @@
+#ADMIN-LOGIN-WINDOW {
+  width: 100%;
+  min-height: 50vh;
+  padding: 10% 20%;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  & > * {
+    width: 100%;
+  }
+
+  & form {
+    & label {
+      font-size: 0.8rem;
+    }
+    & input {
+      margin-bottom: .5rem;
+    }
+  }
+}
